@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- This is the main container -->
+    <div class="container">
+        <!-- Top,Mid,Base are the three divs in the container -->
+        <!-- This is the top bar -->
+        <div class="top">
+            <!-- This is the menu icon -->
+            <div class="ellipse">
+                <i class="fa-solid fa-ellipsis"></i>
+
+                <!-- This is the menu content -->
+                <div class="menu">
+                    <div class="menu-file">
+                        <div id="file">
+                            <div>File</div>
+                            <div>
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div id="file-list">
+                                <div id="filers">
+                                    <div>New Playlist</div>
+                                    <div>Ctrl+N</div>
+                                </div>
+                                <div id="filers">
+                                    <div>New Playlist Folder</div>
+                                    <div>Ctrl+Shift+N</div>
+                                </div>
+                                <div id="filers">
+                                    <div>Private Session</div>
+                                </div>
+                                <div id="filers">
+                                    <div>Offline Mode</div>
+                                </div>
+                                <div id="filers">
+                                    <div>Log Out</div>
+                                    <div>Ctrl+Shift+W</div>
+                                </div>
+                                <div id="filers">
+                                    <div>Exit</div>
+                                    <div>Ctrl+Shift+Q</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-edit">
+                        <div id="edit">
+                            <div>Edit</div>
+                            <div>
+                                <i class="fa-solid fa-play"></i>
+                                <div id="edit-list">
+                                    <div id="filers">
+                                        <div>Undo</div>
+                                        <div>Ctrl+Z</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Redo</div>
+                                        <div>Ctrl+Y</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Cut</div>
+                                        <div>Ctrl+X</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Copy</div>
+                                        <div>Ctrl+C</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Paste</div>
+                                        <div>Ctrl+V</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Delete</div>
+                                        <div>Del</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Select All</div>
+                                        <div>Ctrl+A</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Undo</div>
+                                        <div>Ctrl+Z</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Redo</div>
+                                        <div>Ctrl+Y</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Cut</div>
+                                        <div>Ctrl+X</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Search</div>
+                                        <div>Ctrl+L</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Filter</div>
+                                        <div>Ctrl+F</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Preferences...</div>
+                                        <div>Ctrl+P</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-view">
+                        <div id="view">
+                            <div>View</div>
+                            <div>
+                                <i class="fa-solid fa-play"></i>
+                                <div id="view-list">
+                                    <div id="filers">
+                                        <div>Zoom In</div>
+                                        <div>Ctrl+=</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Zoom Out</div>
+                                        <div>Ctrl+-</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Reset Zoom</div>
+                                        <div>Ctrl+D</div>
+                                    </div>
+                                    <div id="filers"><i class="fa-sharp fa-play"> </i>
+                                        <span>Hardware Acceleration</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-play">
+                        <div id="play">
+                            <div>Playback</div>
+                            <div>
+                                <i class="fa-solid fa-play"></i>
+                                <div id="play-list">
+                                    <div id="filers">
+                                        <div>Play</div>
+                                        <div>Space</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Next</div>
+                                        <div>Ctrl+Right Arrow</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Previous</div>
+                                        <div>Ctrl+Left Arrow</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Seek Forward</div>
+                                        <div>Shift+Right Arrow</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Seek Backward</div>
+                                        <div>Shift+Left Arrow</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Shuffle</div>
+                                        <div>Ctrl+S</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Repeat</div>
+                                        <div>Ctrl+R</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Volume Up</div>
+                                        <div>Ctrl+Up Arrow</div>
+                                    </div>
+                                    <div id="filers">
+                                        <div>Volume Down</div>
+                                        <div>Ctrl+Down Arrow</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-help">
+                        <div id="help">
+                            <div>Help</div>
+                            <div><i class="fa-solid fa-play"></i>
+                                <div id="help-list">
+                                    <div id="filers">
+                                        <div>Spotify Help</div>
+                                        <div>F1</div>
+                                    </div>
+                                    <div>Spotify Community</div>
+                                    <div>Your Account</div>
+                                    <div>Third-party Software</div>
+                                    <div>About Spotify</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <!-- Mid Bar contains 2divs Left/Right divs -->
+            <div class="left">
+                <!-- Left Bar contains 2divs Search/library divs -->
+                <div class="search">
+                    <!-- search contains 2 icons  -->
+                    <nav id="home"><i class="fa-solid fa-house"></i> <b>Home</b></nav>
+                    <br />
+                    <nav id="find">
+                        <i class="fa-solid fa-magnifying-glass"></i> <b>Search</b>
+                    </nav>
+                </div>
+                <!-- This is the music library div -->
+                <div class="library">
+                    <div id="lib">
+                        <span><i class="fa-solid fa-lines-leaning"></i></span>
+                        <span><b>Your Library</b></span>
+                        <span><i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                    <div span="paa">
+                        <b id="pa">Playlists</b> <b id="pa">Albums</b>
+                        <b id="pa">Artists</b>
+                    </div>
+                    <!-- This is the div containing all the overflow bar -->
+                    <div class="flow">
+                        <div class="recent">
+                            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <div>Recents <i class="fa-solid fa-list"></i></div>
+                        </div>
+                        <!-- This is the div containing the music library -->
+                        <div class="lovlik">
+                            <div><img src="/images/love.png" id="love" /></div>
+                            <div id="liked">
+                                <p>Liked Songs</p>
+                                <i class="fa-solid fa-thumbtack" style="color: #1ab72c"></i>
+                                <span id="text2">Playlist . 44 songs</span>
+                            </div>
+                        </div>
+                        <!-- This is the scrolling song list -->
+                        <div class="justin">
+                            <div class="sing">
+                                <img src="/images/Bieber.jpg" id="artist" /><span>
+                                    <p>Justin Beiber</p>
+                                    <p id="text2">Artist</p>
+                                </span>
+                            </div>
+                            <div class="sing">
+                                <img src="/images/Dave.avif" id="artist" /><span>
+                                    <p>Martins Kalu</p>
+                                    <p id="text2">Artist</p>
+                                </span>
+                            </div>
+                            <div class="sing">
+                                <img src="/images/Helen.avif" id="artist" /><span>
+                                    <p>Helen Crest</p>
+                                    <p id="text2">Artist</p>
+                                </span>
+                            </div>
+                            <div class="sing">
+                                <img src="/images/Nicki.jpg" id="artist" /><span>
+                                    <p>Nicki Minaj</p>
+                                    <p id="text2">Artist</p>
+                                </span>
+                            </div>
+                            <div class="sing">
+                                <img src="/images/lennon.jpg" id="artist" /><span>
+                                    <p>John Lennon</p>
+                                    <p id="text2">Artist</p>
+                                </span>
+                            </div>
+                            <div class="sing">
+                                <img src="/images/Marley.jpg" id="artist" /><span>
+                                    <p>Bob Marley</p>
+                                    <p id="text2">Artist</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right contains Mix/Songs Bar -->
+            <div class="right">
+                <div class="mix">
+                    <div id="top-mix">
+                        <div>
+                            <i class="fa-solid fa-circle-chevron-left" style="color: #04070b"></i>
+                            <i class="fa-solid fa-circle-chevron-right" style="color: #8a919e"></i>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-bell"></i>
+                            <i class="fa-solid fa-people-group"></i>
+                            <span id="profile"><i class="fa-solid fa-circle-user"></i>
+                                <span id="profile-drop">
+                                    <li id="prof">Account<i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+                                    <li id="prof">Profile</li>
+                                    <li id="prof">Private Session</li>
+                                    <li id="prof">Settings</li>
+                                    <li id="prof2">Logout</li>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="hez">
+                        <div>
+                            <img src="/images/hezekia" id="hezek" />
+                        </div>
+                        <div id="Public">
+                            <p>Public Playlist</p>
+                            <h1>Daily Mix 2</h1>
+                            <br />
+                            <p id="text2">
+                                Hezekiah Walker,JJ Hairston,William McDowell and more
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-spotify" style="color: #2cdd88"></i>
+                                <a id="text2">Made for</a>
+                                <a>Lawal Ajiboye . 50 songs, 3hrs 59mins</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="songs">
+                    <div class="custom">
+                        <div id="icons">
+                            <span><i class="fa-solid fa-circle-play" style="color: #14b830;"></i>
+                                <i class="fa-solid fa-shuffle" style="color: #c7cbd1;" id=></i>
+                                <i class="fa-regular fa-heart" style="color: #c7cbd1;"></i>
+                                <i class="fa-regular fa-circle-down" style="color: #c7cbd1;"></i></span>
+                            <span id="lips"><i class="fa-solid fa-ellipsis" style="color: #c7cbd1;"></i>
+                                <span id="lips-drop">
+                                    <li id="lip"><span><i class="fa-solid fa-circle-plus" style="color: #74777b;">
+                                            </i></span><span>Add to Your Library</span></li>
+                                    <li id="lip"><span><i class="fa-solid fa-circle-exclamation"
+                                                style="color: #74777b;"> </i></span><span id="text2">Report</span></li>
+                                    <li id="lip"><span><i class="fa-regular fa-circle-down"
+                                                style="color: #74777b;"></i></span> <span>Download</span></li>
+                                    <li id="lip"><span><i class="fa-regular fa-circle-xmark"
+                                                style="color: #74777b;"></i></span> <span>Exclude from your taste
+                                            profile</span></li>
+                                    <li id="lip2"><i class="fa-regular fa-folder" style="color: #74777b;"></i> <span>Add
+                                            to folder</span><i class="fa-solid fa-caret-right"
+                                            style="color: #6d737e;"></i></li>
+                                    <li id="lip2"><i class="fa-regular fa-plus" style="color: #74777b;"></i> <span>Add
+                                            to other playlist</span><i class="fa-solid fa-caret-right"
+                                            style="color: #6d737e;"></i></li>
+                                    <li id="lip2" style="border-top: 1px solid grey;"><i
+                                            class="fa-solid fa-arrow-up-from-bracket" style="color: #74777b;"></i>
+                                        <span>Share</span><i class="fa-solid fa-caret-right"
+                                            style="color: #6d737e;"></i>
+                                    </li>
+                                    <li id="lip" style="border-top: 1px solid grey;"><i
+                                            class="fa-regular fa-circle-question" style="color: #74777b;"></i>
+                                        <span>About recommendations</span>
+                                    </li>
+
+                                </span>
+                            </span>
+                        </div>
+                        <div id="order">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #c7cbd1;"></i>
+                            <a id="text2">Custom order</a>
+                            <i class="fa-solid fa-list" style="color: #c7cbd1;"></i>
+                        </div>
+                    </div>
+                    <!-- This is for the tracklist headings  -->
+
+                    <div id="genre">
+                        <div id="hash"><span>#</span></div>
+                        <div id="title"><span>Title</span></div>
+                        <div id="album"><span>Album</span></div>
+                        <div id="time"><span><i class="fa-regular fa-clock"></i></span></div>
+                    </div>
+                    <!-- This is the tracklists -->
+
+                    <div id="genr">
+                        <div style="width: 5%;"><span>1</span></div>
+                        <div id="title2" style="width: 50%;">
+                            <div><img src="/images/Dave.avif" width="50px" height="50px"></div>
+                            <span>Clean inside<br><a id="text2">Hezekiah Walker,<br>The Love
+                                    FellowshipCrusade
+                                    Choir</a></span>
+                        </div>
+                        <div style="width: 40%;" id="text2"><span>The Essential Hezekiah Walker</span></div>
+                        <div style="width: 5%;" id="text2"><span>2:20</span></div>
+
+                    </div>
+                    <div id="genr">
+                        <div style="width: 3%;"><span>2</span></div>
+                        <div id="title2" style="width: 50%;">
+                            <div><img src="/images/Oliver.jpg" width="50px" height="50px"></div>
+                            <span id="tname">Reckless Love-Live<br><a id="text2">JJ Harrison,<br>Youthful Praise,Greg
+                                    Kirkland,Jr.</a></span>
+                        </div>
+                        <div style="width: 40%;" id="text2"><span>Miracle Worker (Live)</span>
+                        </div>
+                        <div style="width: 5%;" id="text2"><span>4:59</span></div>
+                    </div>
+                    <div id="genr">
+                        <div style="width: 5%;"><span>3</span></div>
+                        <div style="width: 50%;" id="title2">
+                            <div><img src="/images/Snow.jpg" width="50px" height="50px"></div>
+                            <span id="tname">Spirit Break Out<br><a id="text2">William Mcdowell,<br>Trinity
+                                    Anderson,Johnson Shepherd</a></span>
+                        </div>
+                        <div style="width: 40%;" id="text2"><span>Sounds Of Revival</span></div>
+                        <div style="width: 5%;" id="text2"><span>3:24</span></div>
+                    </div>
+                    <div id="genr">
+                        <div style="width: 5%;"><span>4</span></div>
+                        <div style="width: 50%;" id="title2">
+                            <div><img src="/images/Young.jpg" width="50px" height="50px"></div>
+                            <span>Heavenly Voices<br><a id="text2">Donald Alberta,<br>Tristan Kate,Christain
+                                    Giovanni</a>
+                            </span>
+                        </div>
+                        <div style="width: 40%;" id="text2"><span>Songs Of Time</span></div>
+                        <div style="width: 5%;" id="text2"><span>5:12</span></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="base">
+            <div class="music">
+                <div id="musicon">
+                    <i class="fa-solid fa-shuffle" style="color: #74777b;"></i>
+                    <i class="fa-solid fa-backward-step" style="color: #74777b;"></i>
+                    <i class="fa-solid fa-circle-pause fa-xl" style="color: #74777b; padding-top: 5px;"></i>
+                    <i class="fa-solid fa-forward-step" style="color: #74777b;"></i>
+                    <i class="fa-solid fa-repeat" style="color: #05974e;"></i>
+                </div>
+                <div id="vol-bar"></div>
+            </div>
+            <div id="corner">
+                <div class="last">
+                    <i class="fa-solid fa-square-caret-right" style="color: #8b8d92;"></i>
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-microphone-lines"></i>
+                    <i class="fa-solid fa-volume-low"></i>
+                </div>
+                <div id="volume"></div>
+            </div>
+
+        </div>
+</body>
+
+</html>

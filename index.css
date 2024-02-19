@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color: rgb(27, 26, 26);
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+#text2 {
+    color: rgba(242, 240, 240, 0.469);
+}
+
+.top {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+}
+
+.ellipse {
+    width: 10%;
+    position: relative;
+    color: white;
+    padding-left: 5px;
+    z-index: 9;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    width: max-content; 
+}
+
+.ellipse:hover .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-file {
+    border-radius: 5px;
+    width: 100px;
+}
+
+#filers {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#file {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(49, 48, 48);
+    position: relative;
+}
+
+
+#file-list {
+    width: 26vw;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    background-color: rgb(49, 48, 48);
+    margin-left: 90px;
+}
+
+.menu-file:hover #file-list {
+    display: inline-flex;
+}
+
+#edit {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(49, 48, 48);
+    position: relative;
+}
+
+#edit-list {
+    width: 15vw;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    background-color: rgb(49, 48, 48);
+    margin-left: 0px;
+}
+
+.menu-edit:hover #edit-list {
+    display: inline-flex;
+}
+
+#view {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(49, 48, 48);
+    position: relative;
+}
+
+#view-list {
+    width: 30vw;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    background-color: rgb(49, 48, 48);
+    margin-left: 0px;
+}
+
+.menu-view:hover #view-list {
+    display: inline-flex;
+}
+
+#play {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(49, 48, 48);
+    position: relative;
+}
+
+#play-list {
+    width: 30vw;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    background-color: rgb(49, 48, 48);
+    margin-left: 0px;
+}
+
+.menu-play:hover #play-list {
+    display: inline-flex;
+}
+
+#help {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(49, 48, 48);
+    position: relative;
+}
+
+#help-list {
+    width: 20vw;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    background-color: rgb(49, 48, 48);
+    margin-left: 0px;
+}
+
+.menu-help:hover #help-list {
+    display: inline-flex;
+}
+
+.mid {
+    z-index: 0;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+
+.left {
+    width: 30vw;
+    height: 100%;
+}
+
+.right {
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.search {
+    height: 15%;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.library {
+    height: 85%;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#lib {
+    display: flex;
+    padding-left: 5px;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.paa {
+    margin-top: 10px;
+}
+
+#pa {
+    width: fit-content;
+    height: fit-content;
+    border: 1px;
+    border-radius: 5px;
+    background-color: rgba(169, 169, 169, 0.547);
+}
+
+.recent {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-right: 10px;
+
+}
+
+.flow {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.songlist {
+    display: flex;
+    flex-direction: row;
+}
+
+.lovlik {
+    display: flex;
+
+}
+
+#love {
+    height: 7vw;
+    width: 7vw;
+    border-radius: 30px;
+    padding-right: 20px;
+    margin-right: -2px;
+}
+
+#liked {
+    justify-content: center;
+    margin-left: -4px;
+    margin-top: 10px;
+}
+
+.sing {
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+#artist {
+    height: 4vw;
+    width: 4vw;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.mix {
+    height: 47%;
+    width: inherit;
+    background-color: rgb(20, 87, 87);
+
+}
+
+#top-mix {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#profile {
+    position: static;
+    list-style-type: none;
+}
+
+#profile-drop {
+    display: none;
+    position: absolute;
+    right: 13px;
+    background-color: rgb(49, 48, 48);
+    align-content: space-between;
+}
+
+#prof {
+    display: flex;
+    justify-content: space-between;
+
+    width: 13vw;
+}
+
+#prof2 {
+    border-top: 1px solid;
+}
+
+#profile:hover #profile-drop {
+    display: flex;
+    flex-direction: column;
+}
+
+.hez {
+    display: flex;
+}
+
+#hezek {
+    height: 28vh;
+    width: 23vw;
+    padding: 5px;
+}
+
+#public {
+    position: relative;
+    justify-content: space-between
+}
+
+.songs {
+    position: relative;
+    height: 55%;
+    width: inherit;
+    overflow-y: scroll;
+}
+
+.custom {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#lips {
+    position: static;
+    list-style-type: none;
+}
+
+#lips-drop {
+    display: none;
+    position: absolute;
+    /* right: 13px; */
+    background-color: rgb(49, 48, 48);
+    justify-content: space-between;
+}
+
+#lip {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+    padding-right: 10px;
+    /* width: 13vw; */
+}
+
+#lip2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+#lips:hover #lips-drop {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#genre {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+#title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#genr {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#title2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.base {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+.music {
+    margin-left: 220px;
+    padding-top: 13px;
+    /* display: flex; */
+    /* align-content:space-between ; */
+    width: 25vw;
+    height: fit-content;
+}
+
+#musicon {
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 7vw;
+}
+
+#vol-bar {
+    background-color: rgba(255, 255, 255, 0.267);
+    border-radius: 20px;
+    width: 35vw;
+    height: 5px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.last {
+    padding: 10px;
+    /* margin-right: 0vw; */
+    position: relative;
+    right: 80px;
+}
+
+#volume {
+    margin-top: 15px;
+    height: 5px;
+    width: 6vw;
+    /* margin-right: 10px; */
+    position: absolute;
+    /* right: 5px; */
+    background-color: white;
+    border-radius: 20px;
+}
+
+#corner {
+    display: flex;
+    position: relative;
+}
